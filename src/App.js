@@ -1,12 +1,23 @@
+import Articles from "./components/Articles";
+import Download from "./components/Download";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Providers from "./components/Providers";
+import Services from "./components/Services";
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
+
 function App() {
 	return (
-		<div className="container mx-auto bg-gray-200 rounded-xl shadow-sm mt-10 p-10">
-			<p className="text-3xl text text-gray-700 font-bold mb-5">
-				Welcome!
-			</p>
-			<p className="text-gray-500 text-lg">
-				React and tailwind CSS in action
-			</p>
+		<div className="container px-36 mx-auto pt-5">
+			<NavBar />
+			<Home />
+			<Services />
+			<Providers />
+			<Download />
+			<Testimonials />
+			<Articles />
+			<Footer />
 		</div>
 	);
 }
